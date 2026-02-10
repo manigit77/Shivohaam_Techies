@@ -8,7 +8,6 @@
       Global => life time is throught the program.
 
       Block => Block is the any function or statement scope covered by { } .
-
 */
 
 // var names = "shiva";
