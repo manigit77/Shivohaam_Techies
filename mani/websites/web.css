@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #0a2540;
+    color: white;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn{
+    padding: 8px 15px;
+    background: hsl(25, 100%, 55%);
+    border: none;
+    color: white;
+    cursor: pointer;
+   
+}
+.btn a{
+     text-decoration: none;
+}
+
+
+.home1{
+    height: 90vh;
+    background: red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home1 h1{
+    font-size: 50px;
+}
+
+.home-btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #ff7a18;
+    color: white;
+    cursor: pointer;
+}
+
+
+.services{
+    padding: 50px;
+    text-align: center;
+}
+
+.service-box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.card{
+    background: hsl(0, 0%, 96%);
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+
+.about{
+    padding: 50px;
+    background: #a2d2f7;
+    text-align: center;
+}
+
+
+.contact{
+    padding: 50px;
+    text-align: center;
+}
+
+.contact form{
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.contact button{
+    padding: 10px;
+    background: #2382e1;
+    color: white;
+    border: none;
+}
+.form-con1{
+    display: none;
+}
+.form-con1 h1{
+    text-align: center;
+}
+.form-con {
+    max-width: 400px;
+    margin: auto;
+    
+}
+
+.form-con input{
+
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.form-con button{
+    padding: 10px;
+    background: #2382e1;
+    color: white;
+    border: none;
+ 
+}

@@ -1,4 +1,4 @@
-/*
+   /*
 JavaScript => 
 Js is an interpreted , client side, event driven , object oriented, single threaded programming language.
 

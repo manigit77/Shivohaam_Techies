@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Design & Development</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">WebTech</div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <button  class="btn" onclick="Apply()"> <a href="#Register">Register</a></button>
+</header>
+
+
+<section id="home" class="home1">
+    <h1>Web Design & Development</h1>
+    <p>We build modern, responsive and user-friendly websites</p>
+    <button   class="home-btn" onclick="show()">Explore Services</button>
+</section>
+ 
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-box">
+        <div class="card">
+            <h3>Web Design</h3>
+            <p>Creative and modern UI designs</p>
+        </div>
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Fast and responsive websites</p>
+        </div>
+        <div class="card">
+            <h3>SEO Optimization</h3>
+            <p>Improve your website ranking</p>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+        We are a professional web design and development team delivering
+        high-quality websites using latest technologies.
+    </p>
+</section>
+
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+<section>
+<div  id="Register" class="form-con1">
+    <h1>RegisterForm</h1>
+        <form class="form-con" >
+            
+            <label for="fname">Full Name:</label>
+            <input type="text" id="fname" >
+            <label for="course">Course:</label>
+            <input type="text" id="course" >
+            <label for="email">Email:</label>
+            <input type="email" id="email" >
+            <label for="phoneNumber">phoneNumber:</label>
+            <input type="text" id="phoneNumber" >
+            <button type="submit" onclick="validate()" >Submit</button>
+        </form>
+
+</div>
+</section>
+
+<script src="web.js"></script>
+</body>
+</html>
