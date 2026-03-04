@@ -159,5 +159,33 @@ console.log("newArr without filter: ", newArr, arr3);
 // filter method:-
 // this is a higher order function
 
-let arrFilter = newArr.filter((n) => n < 10);
-console.log("array with filter: ", newArr, arrFilter);
+let myArr = [1, 4, 8, 6, 7, 45, 67, 6, 89, 1, 0, 4, 1, 6, 6];
+
+let arrFilter = myArr.filter((num) => num == 6);
+let arrmap = arrFilter.map((num) => num * 2);
+console.log("array with filter: ", myArr, arrFilter, arrmap);
+
+// reduce method:-
+// this is a higher order function
+// this method is used to reduce the array into single value or single output by doing some operations on array elements as passed in arguments function.
+// take two parameters: a function as an arguments and that function take two parameters one is accumulator and another is current value and return single value as output.
+// return single value as output and also update the original array but not return the updated array but return the output value as per the operation done in arguments function.
+
+// without reduce method:-
+let sum = 0;
+for (let i = 0; i < myArr.length; i++) {
+  sum = sum + myArr[i];
+}
+console.log("array without reduce: ", myArr, sum);
+
+let arrReduce = myArr.reduce((acc, curr) => acc + curr, 0);
+console.log("array with reduce: ", myArr, arrReduce);
+
+let parodyucts = [
+  { name: "laptop", price: 50000 },
+  { name: "mobile", price: 20000 },
+  { name: "tv", price: 30000 },
+];
+
+let totalPrice = parodyucts.reduce((acc, curr) => acc + curr.price, 0);
+console.log("total price of products: ", totalPrice);
