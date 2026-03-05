@@ -127,10 +127,6 @@ Object.entries(obj).forEach((entry) => {
 
 console.log("Object.entries() output:", Object.entries(obj));
 
-// Checking if a property exists in an object
-console.log("name" in obj); // true
-console.log("height" in obj); // false
-
 // Destructuring Objects
 const { id, price } = product; // destructuring object to extract name and price properties into variables
 console.log("Destructured id:", id);
@@ -173,3 +169,20 @@ console.log("After sealing obj8:", obj8); // age will change
 // call , apply and bind
 // deep copy and shallow copy of object
 // assign method of object
+
+// nested objects and how to access them
+console.log("City from nested object:", product?.specifications?.city);
+
+// Checking if a property exists in an object
+console.log("name" in obj); // true
+console.log("height" in obj); // false
+// nested object
+console.log("city" in product.specifications);
+// by hasOwnProperty method
+console.log(product.hasOwnProperty("tyy"));
+
+// Object.assign() method is used to copy the values of all enumerable own properties from one or more source objects to a target object. It returns the target object.
+const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+const returnedTarget = Object.assign(target, source);
+console.log("Returned Target:", returnedTarget);
