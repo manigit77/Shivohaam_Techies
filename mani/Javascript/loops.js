@@ -44,3 +44,24 @@ if(number > 0){
 }else{
     console.log(number + "is a  not positive number")
 }
+function generateEmployeeId() {
+    let randomNum = Math.floor(1000 + Math.random() * 9000); 
+    return "EMP" + randomNum;
+}
+
+console.log(generateEmployeeId());
+console.log(Math.random()*1000)
+console.log(Math.floor(Math.random()*1000))
+function generatePassword(length) {
+    let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    let password = "";
+
+    for (let i = 0; i < length; i++) {
+        let randomIndex = Math.floor(Math.random() * chars.length);
+        password += chars[randomIndex];
+    }
+
+    return password;
+}
+
+console.log("Password:", generatePassword(8));

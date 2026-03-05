@@ -82,6 +82,8 @@ console.log(country);
 function functionScope() {
   var district = "Indore"; // function scope
   console.log(district);
+  console.log(country);
+
 }
 
 functionScope();

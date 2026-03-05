@@ -5,6 +5,136 @@ It can be a declaration, an expression, or a control flow statement.
 Here are some examples of different types of statements in JavaScript:
 
 1.) If-Else Statement =>
+An if-else statement is ued to execute a block of code based on a condition. 
+If the condition is true, the code inside the if block is execusted; otherwise, the code inside the else block is executed.
+
+2.) Switch Statement =>
+A switch statement is used to perform different actions based on different conditions. 
+It evaluates an expression and matches its value against multiple case clauses .
+
+
+
+// basic syntax of if-else statement is as follows:
+// if (condition) {
+//   // code to be executed if condition is true
+// } else {
+//   // code to be executed if condition is false
+// }
+let age =18;
+if(age >= 18){
+  console.log("eligible to vote")
+}else if(age < 18 && age > 0){
+   console.log("not eligible to vote")
+}else if(age <=0){
+   console.log("invalid input age")
+}else{
+   console.log("error in age input")
+}
+//nested if-else
+let num = "20";
+if(num >0){
+   if(num%2===0){
+      console.log("num is even ")
+   }else{
+      console.log("num is odd ")
+   }
+}else{
+   console.log("num is not positive ")
+}
+
+let day = 0;
+let dayname;
+switch(day){
+   case 1:
+      console.log("mon")
+      break;
+   case 2:
+      console.log("tues")
+      break;
+   case 3:
+      console.log("wed")
+      break;
+   case 4:
+      console.log("thur")
+      break;
+   case 5:
+      console.log("fri")
+      break;
+   default:
+      console.log("invaild day")
+}
+
+// Examples of continue and break statements in loops:
+
+for (let i = 1; i <= 10; i++) {
+  if (i === 5) {
+    continue; // Skip the iteration when i is 5
+  }
+  if (i === 8) {
+    break; // Exit the loop when i is 8
+  }
+  console.log("Loop Iteration: ", i);
+}
+ for(let i = 1; i<=10 ;i++){
+   if(i===5){
+      continue;
+   }
+   if(i===8){
+      break;
+   }
+   console.log(i)
+ }
+ // for loop statement example
+for (let i = 1; i <= 5; i++) {
+  console.log("For Loop Iteration: ", i);
+}
+
+// for...in loop statement example
+const person = { name: "John", age: 30, city: "New York" };
+for (let key in person) {
+  console.log(key + ": " + person[key]);
+}
+
+const person1 = {name:"mani",age:23,city:"jettipalem"}
+for(let key in person1 ){
+   console.log(key + ": " + person1[key])
+}
+// for...of loop statement example
+const numbers = [1, 2, 3, 4, 5];
+for (let number of numbers) {
+  console.log("Number: ", number);
+}
+const numbers1 = [1,2,3,4,5,6,7,8,9,10];
+for (let numberss of numbers1){
+    console.log("Numberss: ", numberss);
+}
+
+// forEach loop statement example
+numbers.forEach(function (number) {
+  console.log("ForEach Number: ", number);
+});
+numbers1.forEach(function (numberss){
+   console.log(numberss)
+
+})
+
+let j = 1;
+while (j <= 5) {
+  console.log("While Loop Iteration: ", j);
+  j++; // Incrementing j to avoid infinite loop
+}
+let k =1;
+while(k<=6){
+   console.log(k)
+   k++
+}*/
+/* 
+Statement => 
+Statement in JavaScript is a piece of code that performs a specific task. 
+It can be a declaration, an expression, or a control flow statement. 
+Here are some examples of different types of statements in JavaScript:
+
+1.) If-Else Statement =>
 An if-else statement is used to execute a block of code based on a condition. 
 If the condition is true, the code inside the if block is executed; otherwise, the code inside the else block is executed.
 
@@ -13,6 +143,7 @@ A switch statement is used to perform different actions based on different condi
 It evaluates an expression and matches its value against multiple case clauses.
 
 */
+
 
 // basic syntax of if-else statement is as follows:
 // if (condition) {
@@ -162,7 +293,7 @@ const person = { name: "John", age: 30, city: "New York" };
 for (let key in person) {
   console.log(key + ": " + person[key]);
 }
-
+ 
 // for...of loop statement example
 const numbers = [1, 2, 3, 4, 5];
 for (let number of numbers) {
@@ -173,7 +304,7 @@ for (let number of numbers) {
 // for...in loop iterates over the enumerable properties of an object (keys).
 // for...of loop iterates over the values of an iterable object (like arrays, strings, etc.).
 
-// forEach loop statement example
+// forEach loop statement example 
 numbers.forEach(function (number) {
   console.log("ForEach Number: ", number);
 });

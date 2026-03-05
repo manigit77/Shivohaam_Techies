@@ -163,7 +163,7 @@ const person = { name: "John", age: 30, city: "New York" };
 for (let key in person) {
   console.log(key + ": " + person[key]);
 }
-
+ 
 // for...of loop statement example
 const numbers = [1, 2, 3, 4, 5];
 for (let number of numbers) {

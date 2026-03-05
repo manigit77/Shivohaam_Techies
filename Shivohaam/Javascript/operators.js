@@ -1,4 +1,4 @@
-/*  
+ /*  
 Operators in JavaScript => It is an synbol that is used to perform operations on operands (values and variables).
 Rules for writing operators in
 -> every operator works with operands.

@@ -38,7 +38,7 @@ let myName = "ShiVohAam"; // String with spaces (spaces are also characters)
 let myNameTrimmed = myName.trim(); // Using trim() method to remove leading and trailing spaces
 console.log("Trimmed myName:", myNameTrimmed);
 
-// Converting case of strings
+// Converting case of strings-
 // -> toUpperCase() method
 // -> toLowerCase() method
 
@@ -54,7 +54,7 @@ console.log("Length of myName:", stringLength);
 // Accessing characters in a string
 // -> Indexing (using square brackets)
 // -> charAt() method
-
+ 
 let stringIndex = myName[4]; // Accessing character at index 4 of the string (indexing always zero-based index)
 console.log("Character at index 4:", stringIndex);
 
@@ -150,7 +150,7 @@ console.log("Does b end with 'Sairam'?:", endsWithOmkar);
 // basic format : let arrayName = yourString.split(separator , limit);
 
 let csvData = "Shivohaam-25-Developer-India"; // Comma-separated values
-let splitData = csvData.split("-"); // Using split() method to split string into an array
+let splitData = csvData.split(""); // Using split() method to split string into an array
 console.log("Split data array:", splitData);
 
 // Join is used to join all elements of an array into a single string, with a specified separator
@@ -166,7 +166,9 @@ console.log("Joined data string:", joinedData);
 let originalString = "Shivohaam";
 
 let splitstr = originalString.split(""); // Split string into array of characters
+console.log(splitstr)
 let reversedArray = splitstr.reverse(); // Reverse the array of characters
+console.log(reversedArray)
 let reversedString = reversedArray.join(""); // Join the reversed array back into a string
 
 console.log("Reversed string:", reversedString);
