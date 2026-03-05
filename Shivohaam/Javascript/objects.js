@@ -45,8 +45,10 @@ console.log("type of object in JS: ", typeof obj);
 const product = {
   id: 1,
   name: "Laptop",
+  description:
+    "A high-performance laptop suitable for gaming and professional work.",
   price: 50000,
-  features: ["16GB RAM", "512GB SSD", "Intel i7"], // array as value of object
+  features: ["16GB RAM", "512GB SSD", "Intel i7", "SSD", "Snep"], // array as value of object
   specifications: {
     // sub object as value of object
     weight: "1.5kg",
@@ -97,3 +99,77 @@ console.log(obj.myfun); // this will return the function definition because myfu
 
 console.log("Original obj:", obj);
 console.log("refered obj3:", obj3); // share the same reference so, both will reflect the change due to same memory reference
+
+// Object Iteration:
+
+for (let key in obj) {
+  console.log("For loop Iteration", key, ":", obj[key]); // iterating over object properties using for...in loop
+}
+
+console.log("Object.keys() output:", Object.keys(obj));
+
+Object.keys(obj).forEach((key) => {
+  console.log("Object.keys Iteration", key, ":", obj[key]); // iterating over object properties using Object.keys() method
+});
+
+Object.values(obj).forEach((value) => {
+  console.log("Object.values Iteration", value); // iterating over object values using Object.values() method
+});
+
+Object.entries(obj).forEach(([key, value]) => {
+  console.log("Object.entries Iteration", key, ":", value); // iterating over object entries using Object.entries() method
+});
+
+Object.entries(obj).forEach((entry) => {
+  const [key, value] = entry;
+  console.log("Object.entries Iteration with destructuring", key, ":", value); // iterating over object entries using Object.entries() method with destructuring
+});
+
+console.log("Object.entries() output:", Object.entries(obj));
+
+// Checking if a property exists in an object
+console.log("name" in obj); // true
+console.log("height" in obj); // false
+
+// Destructuring Objects
+const { id, price } = product; // destructuring object to extract name and price properties into variables
+console.log("Destructured id:", id);
+console.log("Destructured price:", price);
+
+// destructure the array which is value of features property of product object
+const { features } = product;
+console.log("Destructured features:", features);
+const [feature1, feature2, feature3] = features; // destructuring array to extract individual features into variables
+console.log("Destructured feature1:", feature1);
+console.log("Destructured feature2:", feature2);
+console.log("Destructured feature3:", feature3);
+
+// spread operator with objects
+const obj6 = { ...obj }; // creating a shallow copy of obj using spread operator
+console.log("obj6 (shallow copy of obj):", obj6);
+
+const obj7 = JSON.parse(JSON.stringify(obj)); // creating a deep copy of obj using JSON methods
+console.log("obj7 (deep copy of obj):", obj7);
+
+//Object Methods
+const obj8 = {
+  name: "Shiva",
+  age: 25,
+  greet: function () {
+    console.log("Hello, my name is " + this.name); // method to greet using the name property of the object
+  },
+};
+obj8.greet(); // calling the greet method of obj8
+
+// Object.freeze(obj8); // freezing the object to prevent any modifications to its properties
+obj8.name = "Shivohaam";
+console.log("After freezing obj8:", obj8); // name property will not change due to freeze
+
+Object.seal(obj8);
+obj8.age = 26; // modifying existing property will work with seal
+obj8.gender = " male"; // adding new property will not work with seal
+console.log("After sealing obj8:", obj8); // age will change
+
+// call , apply and bind
+// deep copy and shallow copy of object
+// assign method of object
