@@ -1,5 +1,4 @@
 /*
-
 Array in JS =>
     An Array is an special type of object used to store multiple values in a single variable.
 

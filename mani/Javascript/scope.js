@@ -1,67 +1,62 @@
-/*console.log(job1);//ReferenceError: job1 is not defined
-var job1;
-console.log(job1);
-//console.log(job2)//ReferenceError: Cannot access 'job2' before initialization
+/* Scope & life time of a variable =>
+  Based on Scope - Two Types => 
+    Local => Variable declared within a function are local to that function.
+    Global => Variable declared outside of any function are global variables.
 
-let job2;
-console.log(job2)
-//const job3;//SyntaxError: Missing initializer in const declaration
-job1 = "mani";
-console.log(job1);
+    Life Time => 
+      Local => life time is within in the block of its declaration.
+      Global => life time is throught the program.
 
-const name = "manikanta"
-console.log(name)
-//name = "manikanta";
-console.log(name)//
-console.log(name)//TypeError: Assignment to constant variable.
+      Block => Block is the any function or statement scope covered by { } .
+*/
 
- //var names = "shiva";
+ /*var names = "shiva";
 
- let names = "shiva";//SyntaxError: Identifier 'names' has already been declared
+ //let names = "shiva";//SyntaxError: Identifier 'names' has already been declared
  console.log(names);
  {
    names = "Dev";
    console.log(names);
- 
-   {
+  {
     names = "Sai";
     console.log(names);
-   }
+  }
  }
 
  console.log(names);
-
+console.log(".......................................1")
  const city = "indore";
  console.log(city);
  {
    console.log(city);
  }
-
+console.log(".......................................2")
  function scope() {
-  var names = "saissss";
+   var names = "saissss";
    console.log(names);
-  console.log(city);
+   console.log(city);
  }
-  {
+names = "ga"
+
+ {
    var ab = "devashish";
  }
-console.log(ab);
+ console.log(ab);
 
- scope();
- console.log(names);
-
+scope();
+ //console.log(names);
+console.log(".......................................3")
  if (true) {
    let a = 60;
-   const y = 50;
+  const y = 50;
    console.log(a);
    console.log(y);
-   
  }
 
  a = 40;
  y = 53;
  console.log(a);
- console.log(y);
+ console.log(y);*/
 
 /* Scope => 
 
@@ -82,13 +77,14 @@ without use Strict => when we fetch or find any variable value on global , which
 // var -> Functional Scope
 // let & const -> Block Scope
 
-/*var country = "india"; // global scope
+var country = "india"; // global scope
 console.log(country);
 
 function functionScope() {
   var district = "Indore"; // function scope
   console.log(district);
   console.log(country);
+
 }
 
 functionScope();
@@ -100,16 +96,4 @@ let area;
   console.log(area);
 }
 
-console.log(area); // (ReferenceError: area is not defined for Let & const)*/
-//console.log(job1)//var :ReferenceError: job1 is not defined//let:ReferenceError: Cannot access 'job1' before initialization
-//var job1;
-let job1;
-console.log(job1)
-const job2="mani";//SyntaxError: Missing initializer in const declaration
-console.log(job2)
-//job2 = "m"
-//console.log(job2)//TypeError: Assignment to constant variable.
-
-
-
- 
+console.log(area); // (ReferenceError: area is not defined for Let & const)
